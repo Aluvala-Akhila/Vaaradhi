@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: #1abc9c;
+}
+
+/* Jobs Container */
+.jobs-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.owner-section, .employee-section {
+    width: 45%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.owner-section {
+    border-left: 4px solid #27ae60;
+}
+.employee-section {
+    border-left: 4px solid #e67e22;
+}
+
+h2 {
+    color: #3498db;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #3498db;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Buttons */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+button:hover {
+    background-color: #1abc9c;
+}
+
+/* Footer */
+footer {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

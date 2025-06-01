@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaaradhi</title>
+    <style>
+        /* Basic styling for navigation */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Style each section */
+        section {
+            display: none; /* Hide all sections by default */
+            padding: 20px;
+        }
+        section.active {
+            display: block; /* Only show the active section */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" onclick="showSection('home.hmtl')">Home</a>
+        <a href="#" onclick="showSection('about.html')">About Us</a>
+        <a href="#" onclick="showSection('job.html')">Workers</a>
+        <a href="#" onclick="showSection('service.html')">Employers</a>
+        <a href="#" onclick="showSection('contact.html')">Contact</a>
+  
+    </nav>
+
+    <!-- Sections for each page -->
+    <section id="home" class="active">
+        <h1>Welcome to Vaaradhi</h1>
+        <p>This is the homepage section.</p>
+    </section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Information about the Vaaradhi project.</p>
+    </section>
+
+    <section id="workers">
+        <h1>Workers</h1>
+        <p>List of available workers and search options.</p>
+    </section>
+
+    <section id="employers">
+        <h1>Employers</h1>
+        <p>Information for employers looking to hire workers.</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Contact information and form for inquiries.</p>
+    </section>
+
+    <section id="help">
+        <h1>Help</h1>
+        <p>Frequently asked questions and support resources.</p>
+    </section>
+
+    <script>
+        // JavaScript to handle section navigation
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
